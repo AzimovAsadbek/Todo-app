@@ -18,6 +18,9 @@ import {
   faMagnifyingGlass,
   faPlus,
   faFloppyDisk,
+  faTrash,
+  faPenToSquare,
+  faXmark
 } from "@fortawesome/free-solid-svg-icons";
 import img from "./img/search.gif";
 
@@ -171,7 +174,7 @@ const TodoApp = () => {
                           });
                         }}
                       >
-                        e
+                        <FontAwesomeIcon icon={faPenToSquare} />
                       </DateAdd__btn>
 
                       {/* Delete */}
@@ -184,7 +187,7 @@ const TodoApp = () => {
                         }}
                         delete="true"
                       >
-                        d
+                        <FontAwesomeIcon icon={faTrash} />
                       </DateAdd__btn>
                     </>
                   ) : (
@@ -208,7 +211,7 @@ const TodoApp = () => {
                         }}
                         delete="true"
                       >
-                        c
+                        <FontAwesomeIcon icon={faXmark} />
                       </DateAdd__btn>
                     </>
                   )}
