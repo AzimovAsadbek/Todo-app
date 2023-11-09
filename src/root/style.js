@@ -22,16 +22,21 @@ const Main = styled.div`
 
   @media (max-width: 600px) {
     max-width: 50vw;
-    min-width: 60vw;
+    min-width: 95vw;
   }
   @media (max-width: 500px) {
     max-width: 80vw;
-    min-width: 80vw;
+    min-width: 70vw;
+    max-height: 90vh;
   }
 
-  @media (max-width: 300px) {
+  @media (max-width: 400px) {
     min-width: 90vw;
-    min-height: 80vh;
+    max-height: 80vh;
+  }
+  @media (max-height: 450px) {
+    min-height: 60%;
+    max-height: 85vh;
   }
 `;
 
