@@ -20,7 +20,7 @@ import {
   faFloppyDisk,
   faTrash,
   faPenToSquare,
-  faXmark
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import img from "./img/search.gif";
 
@@ -149,12 +149,23 @@ const TodoApp = () => {
                     htmlFor={value.id}
                     style={
                       !value.status
-                        ? { cursor: "pointer", fontSize: "20px" }
+                        ? {
+                            cursor: "pointer",
+                            fontSize: "20px",
+                            width: "170px",
+                            textAlign: "center",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                          }
                         : {
                             cursor: "pointer",
                             fontSize: "20px",
                             color: "#838383",
                             textDecoration: "line-through",
+                            width: "170px",
+                            textAlign: "center",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
                           }
                     }
                   >
@@ -221,7 +232,7 @@ const TodoApp = () => {
           })
         ) : (
           <NotFound>
-            <img src={img} alt="Eror"/>
+            <img src={img} alt="Eror" />
             <h2 style={{ color: "#122348", fontWeight: "900" }}>
               Malumot mavjud emas!
             </h2>
